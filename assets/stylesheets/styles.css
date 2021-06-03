@@ -1,0 +1,383 @@
+body{
+	margin:0;
+	padding:0;
+}
+
+@font-face {
+  font-family: Questa_Sans_Regular;
+  src: url("../fonts/2-Questa_Sans_Regular-webfont.woff");
+}
+
+#badge img{
+	display:block;
+	margin:auto;
+	position:relative;
+	width:35%;
+	margin-bottom:2%;
+	margin-top:6%;
+}
+#badge p{
+	text-align:center;
+	font-family:Questa_Sans_Regular;
+	font-size:18px;
+}
+#menutop, #menubottom, #menuAll{
+	margin-top:4%;
+	margin-bottom:4%;
+	display:flex;
+	justify-content: space-around;
+	    margin-left: 5%;
+    margin-right: 5%;
+}
+#menuAll{
+	display:none;
+}
+.menu-item{
+	font-weight:bold;
+	font-size:18px;
+	text-decoration:underline;
+	font-family:Questa_Sans_Regular;
+	    padding: 0 59px;
+    text-align: center;
+}
+#find{
+	width:90%;
+	display:block;
+	margin:auto;
+	position:relative;
+	clear: both;
+}
+#findText{
+	text-align:center;
+	font-family:Questa_Sans_Regular;
+	margin-top: 35px;
+}
+#findText h3{
+	margin-bottom:0;
+	font-size:20px;
+}
+#findText p{
+	text-transform:uppercase;
+	margin:0;
+}
+select{
+	width:100%;
+	margin-top:3%;
+	margin-bottom:3%;
+	font-family: Questa_Sans_Regular;
+	font-size: 18px;
+
+	border-radius: 5px;
+	border-color:#d0d0d0;
+	border-width: medium;
+	padding:3%;
+-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(-10em);
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+
+button{
+	background: #FFC427;
+	background-image: -webkit-linear-gradient(top, #FFC427, #FFDA36);
+	background-image: -moz-linear-gradient(top, #FFC427, #FFDA36);
+	background-image: -ms-linear-gradient(top, #FFC427, #FFDA36);
+	background-image: -o-linear-gradient(top, #FFC427, #FFDA36);
+	background-image: -webkit-gradient(to bottom, #FFC427, #FFDA36);
+	-webkit-border-radius: 60px;
+	-moz-border-radius: 60px;
+	border-radius: 60px;
+	color: #333;
+	font-family: Questa_Sans_Regular;
+	font-size: 20px;
+	font-weight:bold;
+	padding: 12px 40px;
+	border: solid #337FED 0;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+	text-transform:uppercase;
+	width:100%;
+	margin-bottom:35px;
+	
+}
+hr{
+	border: none;
+    height: 2px;
+	color: black;
+    background-color: black;
+	margin-left:10%;
+	margin-right:10%;
+}
+#blueSkills{
+	width:94%;
+	background-color:#f3fbff;
+	height:auto;
+	padding-left:3%;
+	padding-right:3%;
+}
+#blueSkills h2{
+	text-align:center;
+	font-family:Questa_Sans_Regular;
+	width:65%;
+	display:block;
+	margin:auto;
+	padding-top:3%;
+	padding-bottom:3%;
+	text-transform:uppercase;
+}
+.allSkills{
+	margin:auto;
+}
+.skillBox{
+	width: 90%;
+	height:250px;
+	display:block;
+	margin:4% auto;
+	background-color:white;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.51); 
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.11);
+	border-radius: 10px;
+	padding:3%;
+}
+.skillBox img{
+	margin:auto;
+	display:block;
+	position:relative;
+}
+
+.skillBox h3{
+	text-align:center;
+	font-family:Questa_Sans_Regular;
+	margin-bottom:1px;
+}
+.skillBox p{
+	text-align:center;
+	font-family:Questa_Sans_Regular;
+	margin-top:1px;
+	margin-bottom:3px;
+	font-size:1.15em;
+	line-height: 28px;
+}
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1025px to higher resolution desktops
+*/
+
+
+@media (min-width: 1025px){
+  
+  #badge img {
+    display: block;
+    margin: auto;
+    position: relative;
+    width: 15%;
+    margin-bottom: 2%;
+    margin-top: 1.5%;
+}
+#menuAll{
+	display:flex;
+	 margin-left: 12%;
+    margin-right: 12%;
+	    margin-top: 1%;
+    margin-bottom: 2.5%;
+}
+#menutop, #menubottom{
+	display:none;
+}
+.menu-item{
+	padding:0;
+		font-size:18px;
+}
+.skillBox {
+    width: 41%;
+    height: 250px;
+    display: block;
+    margin: 1.5%;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 51%);
+    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 11%);
+    border-radius: 10px;
+    padding: 3%;
+    float: left;
+}
+.allSkills{
+	max-width: 750px;
+    margin: auto;
+	height:100%;
+}
+#find {
+    display: block;
+    height: 200px;
+    width: 52%;
+    margin: auto;
+    margin-top: 60px;
+}
+#findText{
+	width:31%;
+	margin-bottom:10px;
+		float:left;
+	display:block;
+		padding-top:0;
+}
+#findText p, #findText h3 {
+	text-align:left;
+	margin-top:0;
+
+}
+select{
+	width:30%;
+	float:left;
+	display:block;
+	padding:1.5%;
+}
+button{
+	width:20%;
+	float:left;
+	display:block;
+	margin:2% auto 2% 2%;
+}
+select, button, #findText{
+
+
+	font-size:18px;
+	margin-top:3%;
+}
+select,button{
+		padding:2.5%;
+		padding:2.5%;
+	margin-left:3%;
+	margin-right:3%;
+	margin-bottom:3%;
+}
+
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 501px) and (max-width: 1024px) {
+#badge img {
+    display: block;
+    margin: auto;
+    position: relative;
+    width: 15%;
+    margin-bottom: 2%;
+    margin-top: 1.5%;
+}
+.skillBox {
+    width: 42%;
+    height:250px;
+    display: block;
+    margin: 1% 1%;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 51%);
+    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 11%);
+    border-radius: 10px;
+    padding: 3%;
+    float: left;
+}
+.allSkills{
+	max-width: 750px;
+    margin: auto;
+	height:100%;
+}
+#find{
+	display:block;
+	height:200px;
+	    width: 60%;
+}
+#findText{
+	width:100%;
+	margin-bottom:10px;
+}
+select{
+	width:65%;
+	float:left;
+	display:block;
+	padding:1.5%;
+}
+button{
+	width:30%;
+	float:left;
+	display:block;
+	margin:2% auto 2% 2%;
+}
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 501px) and (max-width: 1024px) and (orientation: landscape) {
+#badge img {
+    display: block;
+    margin: auto;
+    position: relative;
+    width: 15%;
+    margin-bottom: 2%;
+    margin-top: 1.5%;
+}
+.skillBox {
+    width: 40%;
+    height:250px;
+    display: block;
+    margin: 1% 1%;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 51%);
+    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 11%);
+    border-radius: 10px;
+    padding: 3%;
+    float: left;
+}
+.allSkills{
+	max-width: 834px;
+    margin: auto;
+	height:100%;
+}
+#find{
+	display:block;
+	height:200px;
+	    width: 60%;
+}
+#findText{
+	width:100%;
+	margin-bottom:10px;
+}
+select{
+	width:70%;
+	float:left;
+	display:block;
+	padding:1.5%;
+}
+button{
+	width:25%;
+	float:left;
+	display:block;
+	margin:auto;
+}
+  
+}
