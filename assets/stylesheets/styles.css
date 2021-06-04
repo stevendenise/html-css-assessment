@@ -6,6 +6,7 @@ body{
 @font-face {
   font-family: Questa_Sans_Regular;
   src: url("../fonts/2-Questa_Sans_Regular-webfont.woff");
+  font-display: swap;
 }
 
 #badge img{
@@ -13,13 +14,14 @@ body{
 	margin:auto;
 	position:relative;
 	width:35%;
+	height:auto;
 	margin-bottom:2%;
 	margin-top:6%;
 }
 #badge p{
 	text-align:center;
 	font-family:Questa_Sans_Regular;
-	font-size:18px;
+	font-size:22px;
 }
 #menutop, #menubottom, #menuAll{
 	margin-top:4%;
@@ -34,7 +36,7 @@ body{
 }
 .menu-item{
 	font-weight:bold;
-	font-size:18px;
+	font-size:22px;
 	text-decoration:underline;
 	font-family:Questa_Sans_Regular;
 	    padding: 0 59px;
@@ -54,7 +56,7 @@ body{
 }
 #findText h3{
 	margin-bottom:0;
-	font-size:20px;
+	font-size:22px;
 }
 #findText p{
 	text-transform:uppercase;
@@ -65,7 +67,7 @@ select{
 	margin-top:3%;
 	margin-bottom:3%;
 	font-family: Questa_Sans_Regular;
-	font-size: 18px;
+	font-size:22px;
 
 	border-radius: 5px;
 	border-color:#d0d0d0;
@@ -104,9 +106,9 @@ button{
 	border-radius: 60px;
 	color: #333;
 	font-family: Questa_Sans_Regular;
-	font-size: 20px;
+	font-size:22px;
 	font-weight:bold;
-	padding: 12px 40px;
+	padding: 32px 40px;
 	border: solid #337FED 0;
 	text-decoration: none;
 	display: inline-block;
@@ -136,6 +138,7 @@ hr{
 	text-align:center;
 	font-family:Questa_Sans_Regular;
 	width:65%;
+	font-size:30px;
 	display:block;
 	margin:auto;
 	padding-top:3%;
@@ -147,7 +150,7 @@ hr{
 }
 .skillBox{
 	width: 90%;
-	height:250px;
+	height:280px;
 	display:block;
 	margin:4% auto;
 	background-color:white;
@@ -160,20 +163,24 @@ hr{
 	margin:auto;
 	display:block;
 	position:relative;
+	width:65px;
+	height:auto;
 }
 
 .skillBox h3{
 	text-align:center;
 	font-family:Questa_Sans_Regular;
 	margin-bottom:1px;
+	font-size:28px;
 }
 .skillBox p{
 	text-align:center;
 	font-family:Questa_Sans_Regular;
 	margin-top:1px;
 	margin-bottom:3px;
-	font-size:1.15em;
+
 	line-height: 28px;
+	font-size:22px;
 }
 
 
@@ -209,7 +216,7 @@ hr{
 }
 .skillBox {
     width: 41%;
-    height: 250px;
+    height: 300px;
     display: block;
     margin: 1.5%;
     background-color: white;
@@ -277,63 +284,56 @@ select,button{
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 501px) and (max-width: 1024px) {
-#badge img {
-    display: block;
-    margin: auto;
-    position: relative;
-    width: 15%;
-    margin-bottom: 2%;
-    margin-top: 1.5%;
-}
-.skillBox {
-    width: 42%;
-    height:250px;
-    display: block;
-    margin: 1% 1%;
-    background-color: white;
-    -webkit-box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 51%);
-    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 11%);
-    border-radius: 10px;
-    padding: 3%;
-    float: left;
-}
-.allSkills{
-	max-width: 750px;
-    margin: auto;
-	height:100%;
-}
-#find{
-	display:block;
-	height:200px;
-	    width: 60%;
-}
-#findText{
-	width:100%;
-	margin-bottom:10px;
-}
-select{
-	width:65%;
-	float:left;
-	display:block;
-	padding:1.5%;
-}
-button{
-	width:30%;
-	float:left;
-	display:block;
-	margin:2% auto 2% 2%;
-}
-  
-}
+
 
 /* 
   ##Device = Tablets, Ipads (landscape)
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 501px) and (max-width: 1024px) and (orientation: landscape) {
-#badge img {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  
+}
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2), @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2), @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2),@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2) ,@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 834px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) ,@media only screen 
+  and (min-device-width: 1112px) 
+  and (max-device-width: 1112px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) ,@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) ,@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) ,@media only screen 
+  and (min-device-width: 1366px) 
+  and (max-device-width: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+	  #badge img {
     display: block;
     margin: auto;
     position: relative;
@@ -343,7 +343,7 @@ button{
 }
 .skillBox {
     width: 40%;
-    height:250px;
+    height:300px;
     display: block;
     margin: 1% 1%;
     background-color: white;
@@ -379,5 +379,79 @@ button{
 	display:block;
 	margin:auto;
 }
-  
+
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2),@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait),@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) ,@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2),@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) ,@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) ,@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2),@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) ,@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) ,@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) ,@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) ,@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) ,@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) ,@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) ,@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+#badge p, .menu-item, #findText, #findText h3, select, button,  .skillBox p{
+	font-size:40px;
+}
+#blueSkills h2{
+	font-size:50px;
+}
+.skillBox{
+	height:400px;
+}
+ .skillBox h3{
+	 font-size:50px;
+ }
+  .skillBox p{
+	 font-size:45px;
+	 line-height:50px;
+ }
 }
