@@ -39,7 +39,7 @@ body{
 	font-size:22px;
 	text-decoration:underline;
 	font-family:Questa_Sans_Regular;
-	    padding: 0 59px;
+	padding: 0 45px;
     text-align: center;
 }
 #find{
@@ -108,7 +108,7 @@ button{
 	font-family: Questa_Sans_Regular;
 	font-size:22px;
 	font-weight:bold;
-	padding: 32px 40px;
+	padding: 15px 40px;
 	border: solid #337FED 0;
 	text-decoration: none;
 	display: inline-block;
@@ -241,9 +241,9 @@ hr{
 #findText{
 	width:31%;
 	margin-bottom:10px;
-		float:left;
+	float:left;
 	display:block;
-		padding-top:0;
+	padding-top:0;
 }
 #findText p, #findText h3 {
 	text-align:left;
@@ -263,14 +263,11 @@ button{
 	margin:2% auto 2% 2%;
 }
 select, button, #findText{
-
-
 	font-size:18px;
 	margin-top:3%;
 }
 select,button{
-		padding:2.5%;
-		padding:2.5%;
+padding: 15px;
 	margin-left:3%;
 	margin-right:3%;
 	margin-bottom:3%;
@@ -361,7 +358,7 @@ select,button{
 #find{
 	display:block;
 	height:200px;
-	    width: 60%;
+	width: 60%;
 }
 #findText{
 	width:100%;
@@ -372,12 +369,14 @@ select{
 	float:left;
 	display:block;
 	padding:1.5%;
+
 }
 button{
 	width:25%;
 	float:left;
 	display:block;
-	margin:auto;
+	margin: 13px 0 0 6px;
+	padding: 15px 35px;
 }
 
 }
@@ -438,20 +437,38 @@ button{
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
-#badge p, .menu-item, #findText, #findText h3, select, button,  .skillBox p{
+#badge p{
+    font-size: 27px;
+}
+#findText p{
+	font-size: 14px;
+}
+select, button{
+	font-size: 50px;
+	font-weight:300;
+}
+button{
+	font-weight:bold;
+}
+.menu-item, #findText, #findText h3,    .skillBox p{
 	font-size:40px;
 }
 #blueSkills h2{
 	font-size:50px;
+	font-weight:800;
 }
 .skillBox{
-	height:400px;
+	height:450px;
+}
+.skillBox img{
+	width:120px;
 }
  .skillBox h3{
 	 font-size:50px;
+	 margin:5px;
  }
   .skillBox p{
 	 font-size:45px;
-	 line-height:50px;
+	 line-height:60px;
  }
 }
